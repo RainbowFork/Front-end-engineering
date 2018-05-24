@@ -1,0 +1,1 @@
+function defaultValue(){return function(u){return u?void 0:"----"}}angular.module("myApp").filter("defaultValue",defaultValue);

@@ -1,0 +1,128 @@
+/**
+ * @author: walei
+ * @date:   2017-12-27
+ * @desc:   统一浏览器效果，打造最佳实践 CSS Reset
+ */
+
+ @charset "utf-8";
+
+ /**
+  * 1. 设置所有浏览器 默认字体颜色 和 背景色
+  * 2. 字体约定 62.5%，方便单位转换 10px = 1em = 100% = 8pt
+  * 3. 防止字号放大，保证在 PC 上 zoom 功能正常
+  * 4. 增强易读性
+   */
+html{
+    color: #000;/* 1 */
+    background: #fff;/*1 */
+    font-size: 62.5%; /* 2 */
+    -moz-text-size-adjust: 100%;/* 3 */
+    -ms-text-size-adjust: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+    text-rendering: optimizeLegibility; /* 4 */
+}
+
+ /**
+  *  统一标签边距 
+  */
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, optgroup,p, blockquote, figure, hr, menu, dir,thead, tbody, tfoot, th, td {
+	margin:0;
+	padding:0;
+}
+
+/**
+ * Helvetica Neue 最新版本 Mac 用户的最佳体
+ * Arial Win 下默认英文字体及 Mac 的替代英文字体
+ * 中文字体方面首选了平方
+  */
+body{
+    font:  14px/1.5 "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+}
+
+/**
+ * 统一字体加重
+  */
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 去除默认边框 
+ */
+img,iframe{
+    border:0;
+}
+/**
+ * 去掉列表前的标识, li 会继承
+  */
+ ul, ol {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+/*
+ * 1. 基本的链接样式
+ * 2. 去掉 IE 10+ 点击链接时的灰色背景
+  */
+a {
+	text-decoration: none;/* 1 */
+}
+a:hover {
+	text-decoration: underline;/* 1 */
+}
+a:active {
+	background-color: transparent; /* 2 */
+}
+/*
+ * 
+ */
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+
+/**
+ * 1. 重设字体 表单元素不继承父级 font
+ * 2. 修正所有浏览器中颜色不继承的问题
+ * 3. 修正 Firefox 3+， Safari5 和 Chrome 中外边距不同的问题
+  */
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif; /* 1 */
+    font-size: 100%; 
+    color: inherit; /* 2 */
+    line-height: 1.15; 
+    margin: 0; /* 3 */
+}
+
+/**
+ * 1. 更正 iOS 中无法设置可点击的 input 的问题
+ * 2. 统一其他类型的 input 的光标样式
+  */
+button,
+html input[type="button"], 
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 1 */
+    cursor: pointer; /* 2 */
+}
+
+/**
+ * 重置按钮禁用时光标样式
+  */
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}

@@ -1,0 +1,19 @@
+<div id="m-fifth" ng-controller="mainCtrl" class="container">
+
+
+  <ul class="list-group" ng-repeat="topic in topicList">
+    <li class="list-group-item">
+      <span class="avatar">
+        <img ng-src={{topic.author['avatar_url']}} width="36">
+      </span>
+      <span class="m-text">
+        <a href="#!/cnode/{{topic.id}}"> {{topic.title}}</a>
+      </span>
+      <span class="badge visitNum">{{topic.visit_count}} 次浏览</span>
+    </li>
+  </ul>
+  <div class="container text-center">
+    <my-pagination page-option="option"></my-pagination>
+    <!-- <vue-pages :url="url1" :total="total" :counts="counts" :current="current" :fn="fn1"></vue-pages> -->
+  </div>
+</div>

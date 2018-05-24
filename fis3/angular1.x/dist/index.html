@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular demo</title>
+  <link rel="stylesheet" href="/styles/index_a5e44a9.css">
+  <link rel="stylesheet" href="/styles/bootstrap_5cc01e1.css">
+  <link rel="stylesheet" href="/styles/font-awesome/font-awesome.min_be1e296.css">
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div ng-app="myApp">
+    <!-- header -->
+    <div ng-include="'./component/layout/header.html'"></div>
+
+    <div ng-view></div>
+
+    <!-- footer -->
+    <div ng-include="'./component/layout/footer.html'"></div>
+
+  </div>
+
+
+  <script src="/bulid/angular/angular_a877ad6.js"> </script>
+  <script src="/bulid/angular-route/angular-route_a746f53.js"></script>
+  <script src="/bulid/angular-sanitize.min_9fbd337.js"></script>
+  <script src="/bulid/angular-pagination_0c15baa.js"></script>
+
+  <script src="/app_9e52303.js"></script>
+  <script src="/service_674cd0d.js"></script>
+  <script src="/router_fdd981f.js"></script>
+  <script src="/controller_ce09736.js"></script>
+  <script src="/derectives_b638516.js"></script>
+  <script src="/filter_2cf67cf.js"></script>
+
+  <script src="/component/movie/coming_soon/coming_soonCtrl_fcc444f.js"></script>
+  <script src="/component/movie/in_theaters/in_theatersCtrl_a4ae6af.js"></script>
+  <script src="/component/movie/search/searchCtrl_6fdbb04.js"></script>
+  <script src="/component/movie/top250/top250Ctrl_002eb46.js"></script>
+
+</body>
+
+</html>

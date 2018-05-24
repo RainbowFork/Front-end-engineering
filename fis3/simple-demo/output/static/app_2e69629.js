@@ -1,0 +1,1 @@
+function getAll(){console.log("all")}alert("Hello, World");
